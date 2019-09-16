@@ -1,0 +1,52 @@
+.drawer{
+  height: 100%;
+  background: white;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  width: 220px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+
+.h100{
+	height: 100%;
+}
+.open{
+	transform: translateX(0);
+}
+.Bar{
+  background:linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+}
+
+.menuButton{
+  margin-right: 2px;
+
+}
+.title{
+  margin-left: 2px;
+  flex-grow: 1;
+}
+.backdrop{
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	height: 100%;
+	top:0;
+	left:0;
+	background-color: rgba(0,0,0,0.3);
+	filter: blur(8px);
+  -webkit-filter: blur(8px); 
+}
+.sidelist{
+	visibility: visible;
+	width: 220px;
+    margin-top: 65px;
+}
+.sidelist .MuiListItemText-root {
+	flex-shrink :0;
+}
